@@ -5,6 +5,45 @@
     font-weight: 300;
     box-sizing: border-box;
 }
+@media screen and (min-width: 320px) {
+    html {
+        font-size:calc(12.54545px + .45455vw)
+    }
+    
+}
+h1 {
+    font-size: 2rem
+}
+
+h2 {
+    font-size: 1.6rem
+}
+
+h3 {
+    font-size: 1.3rem
+}
+
+h4 {
+    font-size: 1.15rem
+}
+
+h5 {
+    font-size: 1.1rem
+}
+
+h6,p {
+    font-size: 0.9rem
+}
+
+li {
+    font-size: 0.9rem;
+    margin-bottom: .4rem
+}
+
+small {
+    font-size: 80%;
+    line-height: .1
+}
 html{
     scroll-behavior: smooth;
 }
@@ -31,8 +70,8 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
-
+    height: 7rem;
+    max-height: 140px;
 }
 nav ul li{
     display: inline-block;
@@ -42,7 +81,7 @@ nav ul li{
 nav ul li a{ 
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.25rem;
     position: relative;
 }
 nav ul li a::after{
@@ -59,12 +98,12 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%
 }
-.header-text{
+.header-text p{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 2rem;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 4rem;
     margin-top: 20px;
 }
 .header-text h1 span{
@@ -95,7 +134,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .sub-title{
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: 600;
     color: #fff;
 }
@@ -106,7 +145,7 @@ nav ul li a:hover::after{
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -126,11 +165,10 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 .tab-contents ul li span{
     color: rgba(77, 54, 208, 0.927);
-    font-size: 14px;
 }
 .tab-contents{
     display: none;
@@ -139,9 +177,7 @@ nav ul li a:hover::after{
     display: block;
 }
 /* -------skills-------- */
-#skills{
-padding: 30px 0;
-}
+
 .skills-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -152,7 +188,7 @@ padding: 30px 0;
 .skills-list div{
     background: #262626;
     padding: 20px;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     border-radius: 10px;
@@ -160,11 +196,11 @@ padding: 30px 0;
     
 }
 .skills-list div i{
-    font-size: 50px;
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 .skills-list div h2{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -182,7 +218,7 @@ padding: 30px 0;
 .skills-list div a{
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-top: 20px;
     display: inline-block;
 }
@@ -229,7 +265,7 @@ padding: 30px 0;
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     transition: height 0.5s;
 }
 .layer h3{
@@ -356,22 +392,25 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:768px){
     #header{
         background-image: url(images/phone-background.png);
         background-size: cover;
         background-position: center;
     }
-    .header-text{
+    .logo{
+        height: 100px;
+    }
+    .header-text p{
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 1.5rem;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 2rem;
     }
     nav .fa-solid{
         display: block;
-        font-size: 25px;
+        font-size: 2rem;
         
     }
     nav ul{
